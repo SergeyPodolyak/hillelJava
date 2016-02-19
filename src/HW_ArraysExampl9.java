@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class HW_ArraysExampl9 {
     public static void main(String[] args) {
-        int[] binarNumber = new int[32];
+        int[] binarNumber = new int [32];
         int a;
         int b;
         Scanner scanner = new Scanner(System.in);
