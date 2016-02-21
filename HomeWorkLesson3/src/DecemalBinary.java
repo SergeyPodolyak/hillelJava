@@ -30,13 +30,21 @@ public class DecemalBinary {
 
     }
     public static void binaryToDecemal(){
-        int[] binaryNumber={0,0,0,1,1,0,0,0,1};
-                double decemalNumber=0;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Insert size of binnary number");
+        int size=scanner.nextInt();
 
+        int[] binaryNumber=new int[size];
+                double decemalNumber=0;
+        System.out.println("Insert 0 or 1 ");
+                for (int i=0; i<size; i++){
+
+                    binaryNumber[i]=scanner.nextInt();
+                }
         for (int i=0; i<binaryNumber.length;i++){
 
-            decemalNumber=decemalNumber+(binaryNumber[i]*(Math.pow(2,(8-i))));
+            decemalNumber=decemalNumber+(binaryNumber[i]*(Math.pow(2,(binaryNumber.length-1-i))));
         }
-        System.out.println(decemalNumber);
+        System.out.println("Binary number in decemal view = "+decemalNumber);
     }
 }

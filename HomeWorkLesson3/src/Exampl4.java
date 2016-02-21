@@ -7,7 +7,9 @@ import java.util.Scanner;
 public class Exampl4 {
     public static void main(String[] args) {
         Scanner scannerOfVariant = new Scanner(System.in);
-        System.out.println("If you whant conwert binary to decemal insert number 1, or from decemal to binary insert 2" );
+        System.out.println("Make a choice" );
+        System.out.println("Insert 1 -  conwert binary to decemal" );
+        System.out.println("Insert 2 -  conwert decemal to binary" );
         int a = scannerOfVariant.nextInt();
         switch (a){
             case 1: DecemalBinary.binaryToDecemal();

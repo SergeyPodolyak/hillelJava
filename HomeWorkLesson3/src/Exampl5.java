@@ -3,6 +3,7 @@
  */
 public class Exampl5 {
     public static void main(String[] args) {
+        // Mergesort
         int[] arrayA = {1,3,5,7,11,12,13,15};
         int[] arrayB = {2,4,6,8,9,10,};
         int lengthA = arrayA.length;
