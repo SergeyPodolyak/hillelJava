@@ -12,14 +12,6 @@ public class Exampl2 {
         String[] werbArray = werb.split(" ");
         String[] newwerbArray=getShortSymbolikOfTheWord(werbArray);
         //
-         // for (int i=0; i<werbArray.length; i++){
-           //   int paternLengs = werbArray[i].length()-1;
-           //   char first = werbArray[i].charAt(0);
-            //  char second = werbArray[i].charAt(paternLengs);
-         //     String betwen = Integer.toString(paternLengs-1);
-           //   werbArray[i]=first+betwen+second;
-         // }
-        //
         for (int i=0; i<newwerbArray.length; i++){
             System.out.print(newwerbArray[i]+" ");
         }
