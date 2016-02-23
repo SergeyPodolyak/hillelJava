@@ -1,9 +1,11 @@
+package intro;
+
 /**
- * Created by ADMIN on 12.02.16.
+ * Created by User on 12.02.2016.
  */
-public class FlatPay {
+public class FlatPrise2 {
     public static void main(String[] args) {
-        int days= 4;
+        int days= 50;
         int prise=40;
         int totalPris;
         if (days<7&&days>3){

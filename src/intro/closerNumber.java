@@ -1,3 +1,4 @@
+package intro;
 
 public class closerNumber {
     public static void main(String[] args) {
