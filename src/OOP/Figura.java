@@ -20,6 +20,13 @@ public class Figura {
         System.out.println("Square c1 = " + c1.square);
         System.out.println("Circule lengs c1 = " + c1.circuleLength);
         System.out.println("Square of some circule = " + someSquare);
+        //
+        c1.Scale(c1, 5);
+        //
+        System.out.println("Radius c1 = " + c1.radius);
+        System.out.println("Square c1 = " + c1.square);
+        System.out.println("Circule lengs c1 = " + c1.circuleLength);
+        System.out.println("Square of some circule = " + someSquare);
 
         // Calculation of triangle
         Triangle t1 = new Triangle();
@@ -33,5 +40,13 @@ public class Figura {
         System.out.println("Triangl side b = " + t1.b);
         System.out.println("Triangl side c = " + t1.c);
         System.out.println("Triangl Square  = " + t1.square);
+
+        Rectangle rectangl1= new Rectangle();
+        String sidesOfRectangl =Rectangle.calculationSidesWithAreaAndPerimeter(rectangl1,200d,60d);
+        System.out.println(sidesOfRectangl);
+        System.out.println("Rectangl side a = " + rectangl1.a);
+        System.out.println("Rectangl side b = " + rectangl1.b);
+        System.out.println("Rectangl square = " + rectangl1.square);
+        System.out.println("Rectangl perimetr = " + rectangl1.perimetr);
     }
 }

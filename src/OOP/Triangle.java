@@ -9,12 +9,16 @@ public class Triangle {
     double c;
     int angleBetvinAandB;
     double square;
-    public static double CalculationSideC(int a, int b, int angle ){
-        double c=Math.pow(a,2)+Math.pow(b,2)+2*a*b*Math.cos(angle);
+
+    //    calculating the opposite side
+    public static double CalculationSideC(int a, int b, int angle) {
+        double c = Math.pow(a, 2) + Math.pow(b, 2) + 2 * a * b * Math.cos(angle);
         return c;
     }
-    public static double CalculationSquare(int a, int b, int angle ){
-        double square=((double) (a*b*2)*(double) (Math.sin(angle)))/4;
+
+    //calculation of area
+    public static double CalculationSquare(int a, int b, int angle) {
+        double square = ((double) (a * b * 2) * (double) (Math.sin(angle))) / 4;
         return square;
     }
 
