@@ -45,5 +45,11 @@ public class Rectangle {
         return message;
 
     }
+    public double calculateArea(){
+      double area=a*b;
+
+        return area;
+    }
+
 }
 

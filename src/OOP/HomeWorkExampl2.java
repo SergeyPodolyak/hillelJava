@@ -7,7 +7,10 @@ import java.util.Scanner;
  */
 public class HomeWorkExampl2 {
     public static void main(String[] args) {
-        calculationOfTheRectangleSides();
+     //   calculationOfTheRectangleSides();
+       Rectangle rectangle3= new Rectangle();
+                double a=rectangle3.calculateArea();
+        System.out.println("Area = "+a);
     }
 
     private static void calculationOfTheRectangleSides() {
