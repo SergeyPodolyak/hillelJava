@@ -17,7 +17,7 @@ public class ImprovedArray {
     public void add(String value) {
         if (this.arrayCounter >= this.array.length) {
             String[] someNewArray = new String[this.array.length * 2];
-            System.arraycopy(this.array,0,someNewArray,0,this.array.length);
+            System.arraycopy(this.array, 0, someNewArray, 0, this.array.length);
             //someNewArray = Arrays.copyOf(this.array, this.array.length);
             this.array = someNewArray;
             this.array[arrayCounter] = value;
@@ -27,14 +27,31 @@ public class ImprovedArray {
             this.arrayCounter = this.arrayCounter + 1;
         }
     }
-    public void showElements(){
-        for (int i=0; i<this.arrayCounter;i++){
-            System.out.println(this.array[i]);
+
+
+    public String get(int index) {
+        String someElement;
+        if (index < this.arrayCounter) {
+            someElement = this.array[index];
+        } else {
+            someElement = "This element " + index + " not filled";
 
         }
+        return someElement;
     }
 
+    public int size() {
+        return this.arrayCounter;
+    }
 
+    public String toString() {
+        String beautifulstring = new String();
+        for (int i = 0; i < this.arrayCounter; i++) {
+            beautifulstring = beautifulstring + " " + this.array[i];
+
+        }
+        return beautifulstring;
+    }
 
 
 }
