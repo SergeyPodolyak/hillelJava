@@ -8,12 +8,14 @@ import java.util.Arrays;
 public class VetClinic {
     public static void main(String[] args) {
 
-        Cat catMurzik = new Cat("Murzik", "Grey", 1985);
-        Cat catTom = new Cat("Morkov", "kjvjkkjh", 1986);
+        Cat catMurzik = new Cat("Murzik", "Grey", 1985,5);
+        Cat catTom = new Cat("Morkov", "kjvjkkjh", 1985,6);
         catMurzik.vaccination("SACC");
         System.out.println(catMurzik.getBirthYear());
         System.out.println(catMurzik.getName());
         System.out.println(catMurzik.getColor());
+        System.out.println(catMurzik);
+        System.out.println(catMurzik.equals(catTom));
 
 
         //catMurzik.color = ;
