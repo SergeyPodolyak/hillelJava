@@ -31,9 +31,7 @@ public class Wolf extends WildAnimal {
         this.name = name;
     }
 
-    /**
-     * @return
-     */
+    @Override
     public String toString() {
         if (name != null) {
             return super.toString() + ", Name " + name;

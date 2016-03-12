@@ -18,10 +18,7 @@ public class Fish extends WildAnimal {
 
     }
 
-    /**
-     *
-     * @return
-     */
+    @Override
     public String toString() {
 
         if (this.name != null) {
