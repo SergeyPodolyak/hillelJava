@@ -16,9 +16,14 @@ public class HomeWorkMain {
         Dog kuzy = new Dog(156446, 5, 5, "Black", "Kuzya", true);
         System.out.println(kuzy.voice());
         System.out.println(kuzy);
-GuideDog mango = new GuideDog(12,1,2,"dfdv","Mango",true,true);
+        GuideDog mango = new GuideDog(12, 1, 2, "dfdv", "Mango", true, true);
         System.out.println(mango.voice());
         System.out.println(mango);
 
+        AcrilPaint red = new AcrilPaint(20, 10, 5);
+        System.out.println(red.getConsumption());
+
+        Circle circuke=new Circle(50,red);
+        System.out.println(circuke.getPaintQuantity());
     }
 }

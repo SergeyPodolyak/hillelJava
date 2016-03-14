@@ -25,10 +25,7 @@ public class Dog extends HomeAnimal {
         return super.voice()+" Woof";
     }
 
-    /**
-     *
-     * @return
-     */
+   @Override
     public String toString(){
         return super.toString();
     }

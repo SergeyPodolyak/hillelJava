@@ -30,10 +30,7 @@ public abstract class HomeAnimal extends Animal {
         return super.voice() + ", My name is " + name;
     }
 
-    /**
-     *
-     * @return
-     */
+   @Override
     public String toString() {
         return super.toString() + ", Name " + name + ", Vactinated " + isVactinated;
     }

@@ -32,10 +32,7 @@ public class GuideDog extends Dog {
         return super.voice();
     }
 
-    /**
-     *
-     * @return
-     */
+    @Override
     public String toString() {
         return super.toString() + ", Trained " + trained;
     }
