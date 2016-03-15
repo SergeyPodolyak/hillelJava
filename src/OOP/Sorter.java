@@ -24,7 +24,8 @@ public class Sorter {
 
     public static void main(String[] args) {
         String[] a= {"a", "f", "c", "d"};
-        new Sorter().sort(a);
-        System.out.println(Arrays.toString(a));
+       Integer[] s ={1,2,5,1,2};
+        new Sorter().sort(s);
+        System.out.println(Arrays.toString(s));
     }
 }
