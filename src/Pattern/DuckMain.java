@@ -9,6 +9,6 @@ public class DuckMain {
 
         duck.display();
         duck.quak();
-        
+
     }
 }
