@@ -15,10 +15,10 @@ public class Sorter {
         this.sortable=sortable;
         this.o=o;
     }
-    public void sort(){
+    public int[] sort(){
 
         sortable.sort(o);
 System.out.println(Arrays.toString(o));
-
+return o;
     }
 }
