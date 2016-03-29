@@ -1,7 +1,7 @@
 package collection;
 
 /**
- * Created by MBCNEWMAIN on 22.03.2016.
+ * Created by User on 22.03.2016.
  */
 public class ListElement {
     private Object value;
@@ -36,13 +36,5 @@ public class ListElement {
         } else {
             next.add(o);
         }
-    }
-
-    public Object getValue() {
-        return value;
-    }
-
-    public ListElement getNext() {
-        return next;
     }
 }

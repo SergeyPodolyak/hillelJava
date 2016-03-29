@@ -1,49 +1,33 @@
 package collection;
 
 import OOP.Cat;
-import collection.CatComparator;
 
 import java.util.*;
 
 /**
- * Created by MBCNEWMAIN on 18.03.2016.
+ * Created by User on 18.03.2016.
  */
-class CollectionsMain {
+public class CollectionMain {
     public static void main(String[] args) {
-        ArrayList<Cat> list = new ArrayList<>();
-        list.add(new Cat("tom", "gray", 2015,2));
-        list.add(new Cat("tom", "gray", 2015,2));
-        list.add(new Cat("tom", "gray", 2015,2));
-
+        ArrayList<Cat> list = new ArrayList();
+        list.add(new Cat("ljh", "jsdvhg", 123, 5));
+        list.add(new Cat("dv", "jsdvhg", 16523, 5));
+        list.add(new Cat("58", "jsdvhg", 1243, 5));
+        list.add(new Cat("huy", "zalupa", 15, 28));
         System.out.println(list);
 
-        Cat tom = list.get(2);
 
-        LinkedList<Cat> linkedList = new LinkedList<>();
-        linkedList.add(new Cat("tom", "gray", 2015,2));
-        linkedList.add(new Cat("tom", "gray", 2015,2));
-        linkedList.add(new Cat("tom", "gray", 2015,2));
-
+        Object tom = list.get(3);
+        LinkedList<Cat> linkedList = new LinkedList();
+        linkedList.add(new Cat("ljh", "jsdvhg", 123, 5));
+        linkedList.add(new Cat("ljh", "jsdvhg", 123, 5));
+        linkedList.add(new Cat("ljh", "jsdvhg", 123, 5));
+        linkedList.add(new Cat("ljh", "jsdvhg", 123, 5));
         System.out.println(linkedList.get(1));
-
         printList(list);
         printList(linkedList);
-
-        Collection<Cat> cats = linkedList;
-
-        TreeSet<Cat> sortedCats = new TreeSet<> (new CatComparator());
-
-        sortedCats.add(new Cat("tom", "gray", 2015,2));
-        sortedCats.add(new Cat("tom", "gray", 2011,2));
-        sortedCats.add(new Cat("tom", "gray", 2013,2));
-        sortedCats.add(new Cat("Murzik", "gray", 2013,2));
-
-        System.out.println("Set: ");
-        printForEach(sortedCats);
-
-
+        Collection<Cat> cats= linkedList;
     }
-
     public static void printForEach(Collection<Cat> collection){
         for(Cat cat: collection){
             System.out.println(cat);
