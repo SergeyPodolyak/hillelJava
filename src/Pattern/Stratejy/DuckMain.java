@@ -1,4 +1,4 @@
-package Pattern;
+package Pattern.Stratejy;
 
 /**
  * Created by User on 15.03.2016.

@@ -1,5 +1,7 @@
 package OOP;
 
+import java.util.Arrays;
+
 /**
  * Created by User on 26.02.2016.
  */
@@ -58,8 +60,31 @@ public class Cat {
         this.cuantityLegs = cuantityLegs;
     }
 
-    // Очень важный метод сравнения двух объектов класса
-    public boolean equals(Cat other) {
-        return this.birthYear == other.birthYear;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Cat)) return false;
+
+        Cat cat = (Cat) o;
+
+        if (getBirthYear() != cat.getBirthYear()) return false;
+        if (cuantityLegs != cat.cuantityLegs) return false;
+        if (vaccinesCount != cat.vaccinesCount) return false;
+        if (getColor() != null ? !getColor().equals(cat.getColor()) : cat.getColor() != null) return false;
+        if (getName() != null ? !getName().equals(cat.getName()) : cat.getName() != null) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        return Arrays.equals(vaccine, cat.vaccine);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getColor() != null ? getColor().hashCode() : 0;
+        result = 31 * result + (getName() != null ? getName().hashCode() : 0);
+        result = 31 * result + getBirthYear();
+        result = 31 * result + cuantityLegs;
+        result = 31 * result + Arrays.hashCode(vaccine);
+        result = 31 * result + vaccinesCount;
+        return result;
     }
 }

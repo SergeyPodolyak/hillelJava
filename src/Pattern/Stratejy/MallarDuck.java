@@ -1,7 +1,7 @@
-package Pattern;
+package Pattern.Stratejy;
 
 import Pattern.Fly.Fly;
-import Pattern.Quakebl.Quack;
+import Pattern.Stratejy.Quakebl.Quack;
 
 /**
  * Created by User on 15.03.2016.
