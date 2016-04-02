@@ -23,5 +23,5 @@ public class ProductivityTest {
 
         Assert.assertEquals(1000000,experimentalLinkedList.size());
     }
-    
+
 }
