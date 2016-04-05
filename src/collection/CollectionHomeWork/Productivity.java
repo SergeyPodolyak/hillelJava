@@ -11,12 +11,12 @@ public class Productivity {
     public static void main(String[] args) {
         ArrayList experimentalArrayList = new ArrayList();
         LinkedList experimentalLinkedList = new LinkedList();
-        Collection experimentalTreeSet = new TreeSet();
+        TreeSet experimentalTreeSet = new TreeSet();
 
-       // addToOurElement(experimentalArrayList);
-        //System.out.println("Time of add element in the begin to Array List " + addInTheBegining(experimentalArrayList));
+       addToOurElement(experimentalArrayList);
+        System.out.println("Time of add element in the begin to Array List " + addInTheBegining(experimentalArrayList));
 
-       // System.out.println("Time of add element in the end to Array List " + addInTheEnd(experimentalArrayList));
+       System.out.println("Time of add element in the end to Array List " + addInTheEnd(experimentalArrayList));
         addToOurElement(experimentalLinkedList);
         System.out.println("Time of add element in the begin to Linked List " + addInTheBeginingLinkedList(experimentalLinkedList));
 
@@ -24,7 +24,7 @@ public class Productivity {
     }
 
     public static void addToOurElement(Collection experimental) {
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 10000000; i++) {
             Integer a = new Integer(i);
             experimental.add(a);
         }

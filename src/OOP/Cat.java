@@ -60,7 +60,7 @@ public class Cat implements Comparable{
         this.cuantityLegs = cuantityLegs;
     }
 
-    @Override
+  /**  @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Cat)) return false;
@@ -76,7 +76,7 @@ public class Cat implements Comparable{
         return Arrays.equals(vaccine, cat.vaccine);
 
     }
-
+*/
     @Override
     public int hashCode() {
         int result = getColor() != null ? getColor().hashCode() : 0;
@@ -121,7 +121,7 @@ public class Cat implements Comparable{
         return name.equals(cat.name);
 
     }
-
+/**
     @Override
     public int hashCode() {
         int result = color.hashCode();
@@ -129,4 +129,5 @@ public class Cat implements Comparable{
         result = 31 * result + birthYear;
         return result;
     }
-}
+*/
+    }
