@@ -23,7 +23,9 @@ public class WeatherStation {
 
     public void stateChanged() {
         for (Observer observer : observers) {
-            observer.update(temperature, humidity, pressure);
+            //добавить ссылку на саму себя
+            observer.update(this);
+
         }
     }
 
