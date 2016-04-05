@@ -66,11 +66,11 @@ public class Calculator extends JFrame {
         plus.addActionListener(listener);
 
         a1Button.setActionCommand("1");
-        a5Button.setActionCommand("2");
-        a6Button.setActionCommand("3");
-        a2Button.setActionCommand("4");
-        a3Button.setActionCommand("5");
-        a4Button.setActionCommand("6");
+        a5Button.setActionCommand("5");
+        a6Button.setActionCommand("6");
+        a2Button.setActionCommand("2");
+        a3Button.setActionCommand("3");
+        a4Button.setActionCommand("4");
         a7Button.setActionCommand("7");
         a8Button.setActionCommand("8");
         a0Button.setActionCommand("0");
@@ -78,7 +78,7 @@ public class Calculator extends JFrame {
         a9Button.setActionCommand("9");
         plus.setActionCommand("+");
         textField1.setEnabled(false);
-        textField1.setText("0");
+        textField1.setText("");
 
 
     }
