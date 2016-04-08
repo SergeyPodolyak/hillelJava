@@ -1,5 +1,7 @@
 package collection;
 
+import exception.MyOwnOutOfIndexException;
+
 /**
  * Created by User on 22.03.2016.
  */
@@ -24,11 +26,17 @@ public class CustomLinkedList {
         }
     }
 
-    public Object get(int index) {
+    public Object get(int index)throws MyOwnOutOfIndexException {
         if (next == null) {
-            return null;
+            throw new MyOwnOutOfIndexException("size"+size()+"index"+index);
+
         } else {
-            return next.get(index);
+            try {
+                return next.get(index);
+
+            }catch (IndexOutOfBoundsException e){
+                throw new MyOwnOutOfIndexException("size"+size()+"index"+index);
+            }
         }
     }
 }
