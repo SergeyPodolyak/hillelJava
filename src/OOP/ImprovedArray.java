@@ -34,24 +34,22 @@ public class ImprovedArray {
     //The output of the requested element
     public String get(int index) throws MyOwnOutOfIndexException{
         String someElement="";
-        //if (arrayCounter==0){
-          //  throw new MyOwnOutOfIndexException("Improved array is empty");
-        //}
-        try {
-           someElement=array[index];
-        }catch (IndexOutOfBoundsException e){
-            System.out.println(e);
-            //throw  new MyOwnOutOfIndexException("size "+size()+"index"+index);
+        if (arrayCounter==0){
+        throw new MyOwnOutOfIndexException("Improved array is empty");
+       }
+        if (index < this.arrayCounter) {
+            someElement = this.array[index];
+        } else {
+            throw new MyOwnOutOfIndexException("Index not in the diapazon");
+
         }
 
 
 
-        /*if (index < this.arrayCounter) {
-            someElement = this.array[index];
-        } else {
-            someElement = "This element " + index + " not filled";
 
-        }*/
+
+
+
 return someElement;
     }
 

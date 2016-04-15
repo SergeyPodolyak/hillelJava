@@ -1,5 +1,6 @@
 package OOP;
 
+import exception.MyOwnOutOfIndexException;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,16 +11,16 @@ public class ImprovedArrayTest {
     @Test
     public void ChekTheWorkingOfAcseption(){
         ImprovedArray improvedArray=new ImprovedArray(2);
-        improvedArray.add("dfv");
-        improvedArray.add("sdsdcv");
-        System.out.println(improvedArray);
-System.out.println(improvedArray.get(0));
+        improvedArray.add("1");
+        improvedArray.add("2");
+
+
         String testElement2 = "not work";
         try {
-            String testElement = improvedArray.get(1);
-            Assert.fail();
-            System.out.print(testElement);
-        }catch (Throwable e){
+          improvedArray.get(1);
+            Assert.fail("Upal");
+           // System.out.print(testElement);
+        }catch (MyOwnOutOfIndexException e){
             System.out.println(testElement2);
             System.out.println(e);
         }
