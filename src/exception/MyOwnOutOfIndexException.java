@@ -1,8 +1,10 @@
 package exception;
 
 /**
- * Created by User on 08.04.2016.
+ * Created by ADMIN on 20.04.16.
  */
 public class MyOwnOutOfIndexException extends RuntimeException{
-    public MyOwnOutOfIndexException(String message){};
+    public MyOwnOutOfIndexException(String message){
+        super(message);
+    }
 }

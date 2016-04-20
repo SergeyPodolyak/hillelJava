@@ -1,5 +1,7 @@
 package OOP;
 
+import exception.MyOwnOutOfIndexException;
+
 import java.util.Arrays;
 
 /**
@@ -30,15 +32,27 @@ public class ImprovedArray {
     }
 
     //The output of the requested element
-    public String get(int index) {
-        String someElement;
-        if (index < this.arrayCounter) {
+    public String get(int index) throws MyOwnOutOfIndexException{
+        String someElement="";
+        //if (arrayCounter==0){
+          //  throw new MyOwnOutOfIndexException("Improved array is empty");
+        //}
+        try {
+           someElement=array[index];
+        }catch (IndexOutOfBoundsException e){
+            System.out.println(e);
+            //throw  new MyOwnOutOfIndexException("size "+size()+"index"+index);
+        }
+
+
+
+        /*if (index < this.arrayCounter) {
             someElement = this.array[index];
         } else {
             someElement = "This element " + index + " not filled";
 
-        }
-        return someElement;
+        }*/
+return someElement;
     }
 
     //The number of filled elements
