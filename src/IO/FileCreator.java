@@ -29,12 +29,24 @@ public class FileCreator {
 
       try (DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(pathToFile))){
             for (int i=0; i<size;i++){
-                dataOutputStream.write(0);
+                dataOutputStream.write(1);
         }
     } catch (IOException e) {
         e.printStackTrace();
     }
 
+
+    }
+    public void fileCopy(String nameWhat,String nameWere){
+        String pathToFile1 = "c:temp/myfolder/"+nameWhat+".dat";
+        String pathToFile2 = "c:temp/myfolder/"+nameWere+".dat";
+        Path newFile1 = Paths.get(pathToFile1);
+        Path newFile2 = Paths.get(pathToFile2);
+        try {
+            Files.copy(newFile1,newFile2,StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
     }
